@@ -86,6 +86,46 @@ std::string** createString(int& _heightPlace, int& _widthPlace)
         place[i] = new std::string[_widthPlace];
     return place;
 }
+void adminMessage(int& _heightPlace, int& _widthPlace, std::string** _place, int& _scalePlace, bool& _admin)
+{
+    while (true)
+    {
+
+
+        std::string inputMsg = "";
+        std::string comandMsg;
+        std::cin >> inputMsg;
+
+        if (inputMsg == "/help")
+        {
+            std::cout << "\n/setScalePlace - rescaling map: \n" \
+                      << "";
+            continue;
+        }
+        
+        for (int i = 0; i < inputMsg.length(); i++)
+            if (inputMsg[i] != ':')
+                comandMsg += inputMsg[i];
+            else
+                break;
+        if (comandMsg == "/setScalePlace")
+        {
+            delete _place;
+            _scalePlace = std::stoi(&inputMsg[inputMsg.length() - 1]);
+            _heightPlace = 5 * _scalePlace;
+            _widthPlace = 10 * _scalePlace;
+            _place = createString(_heightPlace, _widthPlace);
+            createPlace(_heightPlace, _widthPlace, _place);
+            //printConsole(_heightPlace, _widthPlace, _place);
+            _admin = false;
+            break;
+        }
+        //else if ()
+        //{
+
+        //}
+    }
+}
 
 int main()
 {
@@ -118,33 +158,8 @@ int main()
         system("cls");
         printConsole(heightPlace, widthPlace, place);
         if (admin)
-        {
-           // th.detach();
-            while (true)
-            {
+            adminMessage(heightPlace, widthPlace, place,scalePlace,admin);
 
-
-                std::string pop = "";
-                std::cin >> pop;
-                std::string str;
-                for (int i = 0; i < pop.length(); i++)
-                    if (pop[i] != ':')
-                        str += pop[i];
-                    else
-                        break;
-                if (str == "/setScalePlace")
-                {
-                    //delete place;
-                    scalePlace = std::stoi(&pop[pop.length()-1]);
-                    heightPlace = 5 * scalePlace;
-                    widthPlace = 10 * scalePlace;
-                    place = createString(heightPlace, widthPlace);
-                    createPlace(heightPlace, widthPlace, place);
-                    admin = false;
-                    break;
-                }
-            }
-        }
         Sleep(100);
     }
     //return 0;

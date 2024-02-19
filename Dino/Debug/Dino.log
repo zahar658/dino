@@ -1,3 +1,3 @@
 ﻿  Dino.cpp
-C:\Users\zahar.mormil\Desktop\dino\Dino\Dino.cpp(134,35): warning C4018: <: несоответствие типов со знаком и без знака
-  Dino.vcxproj -> C:\Users\zahar.mormil\Desktop\dino\Debug\Dino.exe
+C:\Users\Zahar\Desktop\dino\Dino\Dino.cpp(130,35): warning C4018: <: несоответствие типов со знаком и без знака
+  Dino.vcxproj -> C:\Users\Zahar\Desktop\dino\Debug\Dino.exe

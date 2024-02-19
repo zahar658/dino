@@ -1,12 +1,2 @@
 ﻿  Dino.cpp
-C:\Users\zahar.mormil\Desktop\dino\Dino\Dino.cpp(23,6): error C2601: printConsole: недопустимые локальные определения функций
-C:\Users\zahar.mormil\Desktop\dino\Dino\Dino.cpp(9): message : эта строка содержит скобку "{", которая пока не имеет парной
-C:\Users\zahar.mormil\Desktop\dino\Dino\Dino.cpp(33,6): error C2601: redrawPlace: недопустимые локальные определения функций
-C:\Users\zahar.mormil\Desktop\dino\Dino\Dino.cpp(9): message : эта строка содержит скобку "{", которая пока не имеет парной
-C:\Users\zahar.mormil\Desktop\dino\Dino\Dino.cpp(61,6): error C2601: messages: недопустимые локальные определения функций
-C:\Users\zahar.mormil\Desktop\dino\Dino\Dino.cpp(9): message : эта строка содержит скобку "{", которая пока не имеет парной
-C:\Users\zahar.mormil\Desktop\dino\Dino\Dino.cpp(81,15): error C2601: createString: недопустимые локальные определения функций
-C:\Users\zahar.mormil\Desktop\dino\Dino\Dino.cpp(9): message : эта строка содержит скобку "{", которая пока не имеет парной
-C:\Users\zahar.mormil\Desktop\dino\Dino\Dino.cpp(89,5): error C2601: main: недопустимые локальные определения функций
-C:\Users\zahar.mormil\Desktop\dino\Dino\Dino.cpp(9): message : эта строка содержит скобку "{", которая пока не имеет парной
-C:\Users\zahar.mormil\Desktop\dino\Dino\Dino.cpp(9): fatal error C1075: "{": не найдена несоответствующая лексема
+  Dino.vcxproj -> C:\Users\Zahar\Desktop\dino\x64\Debug\Dino.exe
